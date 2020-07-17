@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,4000,5000,6000,7000,8001,4001,5001,6001,7001,800&display=swap')
+
+$morado: #585da3
+$fucsia: #6d3389
+
+.relative
+  position: relative
+
+.titulo-header
+  font-size: 5rem
+  line-height: 1!important
+  font-weight: 600
+  font-style: italic
+  color: white
+  width: min-content
+
+.container-dashboard
+    position: relative
+    top: 15px
+
+.text-position
+  position: absolute
+  top: 34%
+  z-index: 1000
+  color: white
+
+.logo-img
+    text-align: center
+
+.container-dashboard .welcome
+    font-size: 3em
+    font-weight: bold
+    color: #012060
+
+.img-dashboard
+    width: 100%
+
+.directriz-div
+  max-height: 700px
+  overflow-y: scroll
+  padding-top: 20px
+
+.directriz-div .info
+  text-align: center
+  font-weight: bold
+
+.directriz
+  margin-top: 10px
+  padding: 5px
+  border: 1px solid #000
+  border-radius: 5px
+
+.directriz .directriz-titulo
+  text-align: justify
+  font-size: 0.8em
+  font-weight: bold
+  text-align: left
+
+.directriz .directriz-resumen
+  text-align: justify
+  font-size: 0.8em
+
+.btn-submit
+  font-weight: 100
+  text-align: center
+  background-image: linear-gradient(to right, #6d3389, #585da3)
+  border: 3px double transparent
+  border-radius: 80px
+  background-origin: border-box
+  background-clip: content-box, border-box
+  color: white
+  width: 35%
+  height: 57px
+
+@media (max-width: 768px)
+  .img-header
+    display: none
+  .text-position
+    top: 40%!important
+  
+  .titulo-header
+    font-size: 2rem!important
+
+  .text-position > .texto
+    font-size: small
+
+  .sm-bg-morado
+    background-color: $morado
+    height: 300px
+
+.text-position > .texto
+    width: 85%!important
+
+@media screen and (min-width: 300px) and (max-width: 768px)
+  .sm-col-6
+    max-width: 86%!important
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+  .sm-col-full
+    flex: 0 0 100%!important
+    max-width: 100%!important
+  
+  .titulo-header
+    font-size: 2.3rem!important
+  
+  .text-position
+    top: 50%!important
+
+  .text-position > p
+    font-size: small
+  
+  .text-position > .texto
+    width: 100%!important
+
+  .sm-col-6
+    max-width: 86%!important
+
+@media (max-width: 767px)
+  .bg-morado-agua
+    display: none
+
+@media (max-width: 992px)
+  .position-team
+    margin-top: 0!important
+  .vh60
+    height: auto!important
+
+  .text-position > .texto
+    width: 95%!important
+
+@media (max-width: 1672px)
+  .text-position > .texto
+    width: 85%!important

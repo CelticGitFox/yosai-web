@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,4000,5000,6000,7000,8001,4001,5001,6001,7001,800&display=swap')
+
+$morado: #585da3
+$fucsia: #6d3389
+
+.text-morado
+  color: $morado
+
+.titulo-header
+  font-size: 5rem
+  line-height: 1!important
+  font-weight: 600
+  font-style: italic
+  color: white
+  width: min-content
+
+.titulo-team
+  font-size: 3rem
+  line-height: 1 !important
+  font-weight: 600
+  font-style: italic
+  color: $morado
+
+.bg-morado-agua
+  background-color: #f3f7ff
+
+.relative
+  position: relative
+
+.text-position
+  position: absolute
+  top: 34%
+  z-index: 1000
+  color: white
+
+.team
+  height: 330px!important
+  object-fit: contain!important
+
+.position-team
+  margin-top: -100px!important
+
+.bg-morado
+  background-color: $morado
+
+@media (max-width: 768px)
+  .img-header
+    display: none
+  .text-position
+    top: 40%!important
+  
+  .titulo-header
+    font-size: 2rem!important
+
+  .text-position > .texto
+    font-size: small
+
+  .sm-bg-morado
+    background-color: $morado
+    height: 300px
+
+.text-position > .texto
+    width: 85%!important
+
+@media screen and (min-width: 300px) and (max-width: 768px)
+  .sm-col-6
+    max-width: 86%!important
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+  .sm-col-full
+    flex: 0 0 100%!important
+    max-width: 100%!important
+  
+  .titulo-header
+    font-size: 2.3rem!important
+  
+  .text-position
+    top: 50%!important
+
+  .text-position > p
+    font-size: small
+  
+  .text-position > .texto
+    width: 100%!important
+
+  .sm-col-6
+    max-width: 86%!important
+
+@media (max-width: 767px)
+  .bg-morado-agua
+    display: none
+
+@media (max-width: 992px)
+  .position-team
+    margin-top: 0!important
+  .vh60
+    height: auto!important
+
+  .text-position > .texto
+    width: 95%!important
+
+@media (max-width: 1672px)
+  .text-position > .texto
+    width: 85%!important

@@ -1,0 +1,65 @@
+<div class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="logo"></a> -->
+      <h1>Logo</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" [routerLink]="['/servicios']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contactos']" tabindex="-1" aria-disabled="true">Contáctos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div style="margin-bottom: 80px"></div>
+<router-outlet></router-outlet>
+
+
+<footer class="text-white bg-footer">
+  <h1>Footer</h1>
+</footer>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+<script>
+  $(document).ready(function() {
+    $(window).resize(function() {
+      if ($(window).width() >= 980) {
+
+        $(".navbar .dropdown-toggle").hover(function() {
+          $(this).parent().toggleClass("show");
+          $(this).parent().find(".dropdown-menu").toggleClass("show");
+        });
+
+        $(".navbar .dropdown-menu").mouseleave(function() {
+          $(this).removeClass("show");
+        });
+      }
+    });
+  });
+</script>
