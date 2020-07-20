@@ -1,65 +1,128 @@
-<div class="fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="bg-social">
     <div class="container">
-      <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="logo"></a> -->
-      <h1>Logo</h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="row align-items-center text-white">
+            <div class="col-md-6">
+                ES
+            </div>
+            <div class="col-md-6 text-right d-flex align-items-center justify-content-end">
+                <div class="mr-4">
+                    SIGUENOS
+                </div>
+                <div class="social-top d-flex justify-content-end">
+                    <a href="#">
+                        <div class="">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="logo"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" [routerLink]="['/servicios']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Servicios
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex align-items-center justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/productos']">Productos</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" [routerLink]="['/productos/PlasticMetal']">Plastic & Metal</a>
+                        </div>
+                    </li>
+                    <h1 class="m-0">Logo</h1>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/contactos']" tabindex="-1" aria-disabled="true">Contáctos</a>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/contactos']" tabindex="-1" aria-disabled="true">Contáctos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        </div>
+    </nav>
 </div>
-<div style="margin-bottom: 80px"></div>
+<!-- <div style="margin-bottom: 80px"></div> -->
 <router-outlet></router-outlet>
 
 
-<footer class="text-white bg-footer">
-  <h1>Footer</h1>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="text-white row col-md-8 bg-footer p-5 text-uppercase">
+            <div class="col-sm-12 col-md-3 col-lg-3 content-footer">
+                <p class="m-0">Menu</p>
+                <ul class="text-uppercase mt-3">
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">inicio</a></li>
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">productos</a></li>
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">nosotros</a></li>
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">contactos</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-5 content-footer">
+                <p class="m-0">Productos</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xl-6">
+                        <ul class="text-uppercase mt-3">
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">bumper</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">grille</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">fender</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">inner fender</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-6">
+                        <ul class="text-uppercase mt-3">
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">radiator</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">condenser</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">hood</a></li>
+                            <li><i class="fas fa-caret-right gris"></i> <a href="#">lapms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 content-footer">
+                <p class="m-0">Preguntas frecuentes</p>
+                <ul class="text-uppercase mt-3">
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">pregunta 1</a></li>
+                    <li><i class="fas fa-caret-right gris"></i> <a href="#">pregunta 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 content-footer p-5">
+            <p class="m-0">logo</p>
+            <p class="copyright text-center">DERECHOS RESERVADOS, YOSAI &copy; 2020</p>
+            <div class="d-flex justify-content-between sociales">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
-  <i class="fas fa-angle-up"></i>
+    <i class="fas fa-angle-up"></i>
 </a>
-<script>
-  $(document).ready(function() {
-    $(window).resize(function() {
-      if ($(window).width() >= 980) {
-
-        $(".navbar .dropdown-toggle").hover(function() {
-          $(this).parent().toggleClass("show");
-          $(this).parent().find(".dropdown-menu").toggleClass("show");
-        });
-
-        $(".navbar .dropdown-menu").mouseleave(function() {
-          $(this).removeClass("show");
-        });
-      }
-    });
-  });
-</script>

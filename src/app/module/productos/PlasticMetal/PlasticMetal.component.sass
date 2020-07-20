@@ -1,0 +1,61 @@
+$blue: #192440
+$rojo: #cc0100
+.text-blue
+  color: $blue
+
+.titulo-header
+  font-size: 4rem
+  line-height: 1 !important
+  font-weight: 800
+  font-style: italic
+  color: $blue
+  text-align: right
+
+.subrayado
+  background-image: linear-gradient(115deg, transparent 6%, red 0%, red 93%, transparent 2%)
+  padding: 21px 0.5em
+  font-size: 3em
+  font-weight: 600
+  color: white
+
+.titulo-header-1
+  font-size: 4rem
+  line-height: 1 !important
+  font-weight: 800
+  color: $rojo
+
+.subtitulo
+  color: $rojo
+  font-weight: 700
+  text-align: center
+
+.img-producto
+  height: 228px
+  object-fit: contain
+
+.bg-red
+  background-color: $rojo
+  padding: 5px
+
+.border-red
+  border: 2px solid $rojo
+  border-radius: 15px
+  padding: 15px
+  
+.atributo-title
+  font-weight: 700
+  color: $rojo
+  font-size: 20px
+
+// Part
+
+@media (max-width: 1208px)
+  .last-product
+    font-size: 1rem
+
+  .last-content
+    display: block!important
+
+@media screen and (min-width: 1208px) and (max-width: 1490px)
+  .last-product
+    font-size: 1.5rem

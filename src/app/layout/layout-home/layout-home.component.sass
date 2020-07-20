@@ -1,6 +1,93 @@
-$morado: #585da3
-$fucsia: #6d3389
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap')
 
+$morado: #585da3
+$oscuro: #292b3e
+$fucsia: #6d3389
+$wine: #9698af
+$social: #51557c
+// part1
+ul
+  list-style: none
+  padding: 0
+  line-height: 2
+  li>
+  a
+    color: white
+    margin-left: 8px
+.content-footer
+  >p
+    color: $wine
+    font-size: 16px
+    font-weight: 500
+.sociales
+  >a
+    font-size: 3em
+    color: $social
+    transition: all .3s ease
+    &:hover
+      color: $oscuro
+.gris
+  color: $wine
+
+.copyright
+  font-weight: 400!important
+  margin: 2em 0 2em 0
+
+.navbar-nav
+  >li
+    a
+      border: 1px solid #51557c
+      width: 200px
+      border-radius: 7px
+      text-align: center
+      padding: 0
+      text-transform: uppercase
+
+.navbar
+  padding: 1rem 1rem!important
+
+.bg-social
+  background-color: $social
+  padding: 1em
+
+.social-top
+  >a
+    border: 1px solid white
+    border-radius: 7px
+    margin-left: 8px
+    height: 35px
+    width: 35px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all .3s ease
+    >div
+      color: white
+      font-size: 18px
+
+.social-top a:hover
+  background-color: white
+
+.social-top a:hover div
+  color: $social
+
+.nav-link
+  color: #292562!important
+  font-weight: 500!important
+  font-size: 20px!important
+  transition: all .3s ease
+  &:hover
+    background: #51557c
+    color: white!important
+
+.nav-link.active
+  background: #51557c
+  color: white!important
+
+.bungee
+  font-family: 'Bungee', cursive
+
+// fin
 .bg-morado
   background-color: $fucsia
 
@@ -53,10 +140,7 @@ $fucsia: #6d3389
 .morado
   color: $morado
 
-.nav-link
-  color: $fucsia!important
-  font-weight: 500!important
-  font-size: 20px!important
+
 
 .bg-footer
   background-color: #2d2d2d
