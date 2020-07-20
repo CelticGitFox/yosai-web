@@ -2,8 +2,8 @@ import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {AuthGuard} from '../../system/auth/auth.guard';
 import {AuthModule} from '../../system/auth/auth.module';
-import {PlasticMetalComponent} from "./plasticmetal/plasticmetal.component";
-import {ProductosComponent} from "./productos.component";
+import {PlasticMetalComponent} from './plasticMetal/plasticMetal.component';
+import {ProductosComponent} from './productos.component';
 
 @NgModule({
   imports: [
@@ -13,6 +13,7 @@ import {ProductosComponent} from "./productos.component";
         path: '', component: ProductosComponent,
         children: [
           {path: 'PlasticMetal', component: PlasticMetalComponent },
+          {path: 'Listado_Productos', component: PlasticMetalComponent },
         ]
       }
     ])

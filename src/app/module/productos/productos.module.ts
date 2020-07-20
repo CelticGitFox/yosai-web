@@ -4,12 +4,15 @@ import { LayoutModule } from '../../layout/layout.module';
 import { ProductosComponent } from './productos.component';
 import { RouterModule } from '@angular/router';
 import { LoaderModule } from '../../common/loader/loader.module';
-import { NgxSpinnerModule } from "ngx-spinner";
-import { PlasticMetal } from "./PlasticMetal/PlasticMetal.component";
-import {ProductosRoutes} from "./productos.routes";
+import {ProductosRoutes} from './productos.routes';
+import {NgxSpinnerModule} from 'ngx-spinner';
+import {ListadoProductosComponent} from './listadoProductos/listadoProductos.component';
+import {PlasticMetalComponent} from './plasticMetal/plasticMetal.component';
+
 
 @NgModule({
   imports: [
+    ProductosRoutes,
     CommonModule,
     LoaderModule,
     LayoutModule,
@@ -18,10 +21,7 @@ import {ProductosRoutes} from "./productos.routes";
       {path: '', component: ProductosComponent}
     ]),
   ],
-  declarations: [
-    ProductosComponent,
-    PlasticMetal
-  ],
+  declarations: [ProductosComponent, ListadoProductosComponent, PlasticMetalComponent],
   exports: [ProductosComponent]
 })
 export class ProductosModule {
