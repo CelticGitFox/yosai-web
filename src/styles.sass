@@ -66,24 +66,32 @@ input::focus
     padding: 0.5em
 
 .border-iz
-    border-left: 2px solid
+    border-left: 4px solid
 
 .border-de
-    border-right: 2px solid
+    border-right: 4px solid
 
 .text-parts
     font-size: 3em
     line-height: 1
 
+.text-parts-small
+    font-size: 2em
+    line-height: 1
+
 .grid-parts
     display: grid
-    grid-template-columns: 1.5fr 1fr 1fr 1fr
+    grid-template-columns: 2fr 1fr 1fr 1fr
     align-items: center
 
 .grid-parts-2
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1.5fr
+    grid-template-columns: 1fr 1fr 1fr 2fr
     align-items: center
+
+.grid-parts-image
+    display: grid
+    grid-template-columns: 1fr 1fr
 
 .text-bumper
     font-weight: 500
@@ -92,12 +100,19 @@ input::focus
     font-size: 12px
 
 .contenedor-parts
-    height: 200px
-    object-fit: contain
+    text-align: center
+    >img
+        height: 200px
+        object-fit: contain
+
+.contenedor-micro
+    >img
+        height: 40px
+        object-fit: cover
 
 .grid-light
     display: grid
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr
 
 .grid-auto
     display: grid
@@ -145,3 +160,48 @@ input::focus
         text-decoration: none
         color: white
         background-color: #3f4367
+
+// Productos internos
+
+    // metal parts
+
+.text-oscuro
+    color: $oscuro
+
+.vermas
+    border: 2px solid
+    padding: 8px 3em
+    font-weight: 600
+    transition: all .3s ease
+    &:hover
+        background-color: $oscuro
+        border: 2px solid
+        color: white
+        text-decoration: none
+
+.descargar
+    padding: 8px 3em
+    font-weight: 600
+    transition: all .3s ease
+    background-color: $oscuro
+    border: 2px solid
+    color: white
+    &:hover
+        color: $oscuro
+        background-color: white
+        border: 2px solid
+        text-decoration: none
+
+.weight-bold
+    font-weight: 600
+
+// plastic parts
+.icon-producto
+    width: 20%
+
+.text-icon
+    font-size: small
+    line-height: 2
+
+.line
+    line-height: 2

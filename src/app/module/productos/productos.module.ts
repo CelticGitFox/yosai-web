@@ -6,8 +6,11 @@ import { RouterModule } from '@angular/router';
 import { LoaderModule } from '../../common/loader/loader.module';
 import {ProductosRoutes} from './productos.routes';
 import {NgxSpinnerModule} from 'ngx-spinner';
-import {ListadoProductosComponent} from './listadoProductos/listadoProductos.component';
 import {PlasticMetalComponent} from './plasticMetal/plasticMetal.component';
+import { PlasticPartsComponent } from './plasticParts/plasticParts.component';
+import { CoolingProductsComponent } from './CoolingProducts/CoolingProducts.component';
+import { RadiatorComponent } from './Radiator/Radiator.component';
+import { LampsComponent } from './Lamps/Lamps.component';
 
 
 @NgModule({
@@ -21,7 +24,13 @@ import {PlasticMetalComponent} from './plasticMetal/plasticMetal.component';
       {path: '', component: ProductosComponent}
     ]),
   ],
-  declarations: [ProductosComponent, ListadoProductosComponent, PlasticMetalComponent],
+  declarations: [
+    ProductosComponent, 
+    PlasticMetalComponent, 
+    PlasticPartsComponent , 
+    CoolingProductsComponent, 
+    RadiatorComponent , 
+    LampsComponent],
   exports: [ProductosComponent]
 })
 export class ProductosModule {
