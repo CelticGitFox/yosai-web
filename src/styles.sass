@@ -142,6 +142,7 @@ input::focus
     color: $social
     font-size: 3em!important
     font-weight: 500
+    line-height: 1
 
 .text-negro
     color: #333
@@ -205,3 +206,62 @@ input::focus
 
 .line
     line-height: 2
+
+// cooling card
+
+.cooling-card
+    height: 300px
+    object-fit: contain
+    width: -webkit-fill-available
+// radiator
+.radiator-img
+    height: 200px
+    width: -webkit-fill-available
+    object-fit: contain
+
+.radiator-cover
+    height: 255px
+    object-fit: cover
+
+.grid-radiator
+    display: grid
+    grid-template-columns: 1fr 2fr
+
+.border-light
+    border: 1px solid #b9bbcb!important
+    height: 230px
+    width: -webkit-fill-available
+
+.img-light
+    height: 130px
+
+@media (max-width: 767px)
+    .grid-light, .grid-parts, .grid-parts-2, .grid-parts-image, .grid-radiator
+        grid-template-columns: 1fr!important
+
+    .mt-100
+        margin-top: 0px!important
+
+    .h-contact
+        height: auto!important
+
+    .grid-footer
+        grid-template-columns: 1fr
+
+    .contenedor-micro > img
+        height: auto!important
+
+@media (max-width: 992px)
+    .grid-footer
+        grid-template-columns: 1fr
+
+    .contenedor-micro > img
+        height: inherit!important
+
+@media (max-width: 1143px)
+    .grid-auto
+        grid-template-columns: 1fr!important
+
+@media screen and (max-width: 1199px)
+    .grid-light, .grid-parts, .grid-parts-2
+        grid-template-columns: 1fr 1fr

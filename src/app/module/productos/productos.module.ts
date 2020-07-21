@@ -11,6 +11,9 @@ import { PlasticPartsComponent } from './plasticParts/plasticParts.component';
 import { CoolingProductsComponent } from './CoolingProducts/CoolingProducts.component';
 import { RadiatorComponent } from './Radiator/Radiator.component';
 import { LampsComponent } from './Lamps/Lamps.component';
+import { MetalPartsComponent } from './MetalParts/MetalParts.components';
+import { CondenserComponent } from './Condenser/Condenser.component';
+import { CoolingFanComponent } from './CoolingFan/CoolingFan.component';
 
 
 @NgModule({
@@ -30,7 +33,11 @@ import { LampsComponent } from './Lamps/Lamps.component';
     PlasticPartsComponent , 
     CoolingProductsComponent, 
     RadiatorComponent , 
-    LampsComponent],
+    LampsComponent,
+    MetalPartsComponent,
+    CondenserComponent,
+    CoolingFanComponent
+  ],
   exports: [ProductosComponent]
 })
 export class ProductosModule {
