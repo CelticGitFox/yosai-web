@@ -72,7 +72,7 @@ input::focus
     border-right: 4px solid
 
 .text-parts
-    font-size: 3em
+    font-size: 4em
     line-height: 1
 
 .text-parts-small
@@ -235,6 +235,15 @@ input::focus
 .img-light
     height: 130px
 
+.width-75
+    width: 55%
+
+.lamp-xs
+    display: none
+
+.lamp-producto
+    height: 184px
+
 @media (max-width: 767px)
     .grid-light, .grid-parts, .grid-parts-2, .grid-parts-image, .grid-radiator
         grid-template-columns: 1fr!important
@@ -250,6 +259,23 @@ input::focus
 
     .contenedor-micro > img
         height: auto!important
+    
+    .width-75
+        width: 100%!important
+
+    .title-header
+        font-size: 3em!important
+
+    .lamp-lg
+        display: none
+
+    .lamp-xs
+        display: block!important
+        font-size: x-large!important
+        text-align: center!important
+
+    .lamp-producto
+        height: 0px!important
 
 @media (max-width: 992px)
     .grid-footer
@@ -258,6 +284,22 @@ input::focus
     .contenedor-micro > img
         height: inherit!important
 
+    .title-header
+        font-size: 4em
+
+    .width-75
+        width: 75%
+
+    .col-md-5
+        margin-top: 20px
+        margin-bottom: 20px
+
+    .contenedor-parts
+        margin: 20px 0 20px 0
+
+    .text-parts
+        font-size: 3em
+
 @media (max-width: 1143px)
     .grid-auto
         grid-template-columns: 1fr!important
@@ -265,3 +307,12 @@ input::focus
 @media screen and (max-width: 1199px)
     .grid-light, .grid-parts, .grid-parts-2
         grid-template-columns: 1fr 1fr
+
+    .items-title
+        display: none
+
+    .items-title-sm
+        display: block!important
+
+.items-title-sm
+    display: none
