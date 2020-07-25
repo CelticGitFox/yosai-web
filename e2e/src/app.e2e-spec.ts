@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('tetsu_web app is running!');
+    expect(page.getTitleText()).toEqual('yosai_web app is running!');
   });
 
   afterEach(async () => {

@@ -1,12 +1,16 @@
-import { EncryptService } from './data/services/encrypt.service';
-
 export class AppBase {
+  public idioma = null;
 
-  // variables
-  public userInSession = null;
-
-  constructor(
-  ) {
+  constructor() {
+    this.initStorage();
   }
 
+  initStorage() {
+    this.idioma = localStorage.getItem('idioma');
+
+    if (this.idioma === null) {
+      this.idioma = 'en';
+      localStorage.setItem('idioma', this.idioma);
+    }
+  }
 }
